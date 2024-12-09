@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "N+yrZjnZcjpzrvUK/10ssHCpp6WYLYrleDGMgk11tXp9Bpoj9DyrCniP331OU3Rq1KqYIsZVHnQ3lFAHbSBynQ==",
+  "success": true,
+  "projectFilePath": "C:\\ITProjects\\.Net\\!PetProjects\\MicroservicesPractice\\OrderService\\OrderService.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\semen\\.nuget\\packages\\confluent.kafka\\2.6.1\\confluent.kafka.2.6.1.nupkg.sha512",
+    "C:\\Users\\semen\\.nuget\\packages\\librdkafka.redist\\2.6.1\\librdkafka.redist.2.6.1.nupkg.sha512"
+  ],
+  "logs": []
+}

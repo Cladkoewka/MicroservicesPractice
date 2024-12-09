@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "jcH/9vDkje50UUwtFyLG/B7OzRcVWbGoQqyxX6Ut7Jait1YrT1FBv5abPAcBcdHzDob2THNRkNqBjkVXULFw6Q==",
+  "success": true,
+  "projectFilePath": "C:\\ITProjects\\.Net\\!PetProjects\\MicroservicesPractice\\NotificationService\\NotificationService.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\semen\\.nuget\\packages\\confluent.kafka\\2.6.1\\confluent.kafka.2.6.1.nupkg.sha512",
+    "C:\\Users\\semen\\.nuget\\packages\\librdkafka.redist\\2.6.1\\librdkafka.redist.2.6.1.nupkg.sha512"
+  ],
+  "logs": []
+}

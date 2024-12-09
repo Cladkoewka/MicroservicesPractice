@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "QIC5ybcVmEr7/DlG9Z9jXyT+PGVxTY5T8DmFdn2uTL48EW0rtNmB2Fd9S9E49eDb3BR96xxrsaMtjbyCTsCDaA==",
+  "success": true,
+  "projectFilePath": "C:\\ITProjects\\.Net\\!PetProjects\\MicroservicesPractice\\PaymentService\\PaymentService.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\semen\\.nuget\\packages\\confluent.kafka\\2.6.1\\confluent.kafka.2.6.1.nupkg.sha512",
+    "C:\\Users\\semen\\.nuget\\packages\\librdkafka.redist\\2.6.1\\librdkafka.redist.2.6.1.nupkg.sha512"
+  ],
+  "logs": []
+}

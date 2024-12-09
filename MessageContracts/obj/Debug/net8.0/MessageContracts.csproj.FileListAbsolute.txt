@@ -1,0 +1,12 @@
+C:\ITProjects\.Net\!PetProjects\MicroservicesPractice\MessageContracts\bin\Debug\net8.0\MessageContracts.deps.json
+C:\ITProjects\.Net\!PetProjects\MicroservicesPractice\MessageContracts\bin\Debug\net8.0\MessageContracts.dll
+C:\ITProjects\.Net\!PetProjects\MicroservicesPractice\MessageContracts\bin\Debug\net8.0\MessageContracts.pdb
+C:\ITProjects\.Net\!PetProjects\MicroservicesPractice\MessageContracts\obj\Debug\net8.0\MessageContracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\ITProjects\.Net\!PetProjects\MicroservicesPractice\MessageContracts\obj\Debug\net8.0\MessageContracts.AssemblyInfoInputs.cache
+C:\ITProjects\.Net\!PetProjects\MicroservicesPractice\MessageContracts\obj\Debug\net8.0\MessageContracts.AssemblyInfo.cs
+C:\ITProjects\.Net\!PetProjects\MicroservicesPractice\MessageContracts\obj\Debug\net8.0\MessageContracts.csproj.CoreCompileInputs.cache
+C:\ITProjects\.Net\!PetProjects\MicroservicesPractice\MessageContracts\obj\Debug\net8.0\MessageContracts.dll
+C:\ITProjects\.Net\!PetProjects\MicroservicesPractice\MessageContracts\obj\Debug\net8.0\refint\MessageContracts.dll
+C:\ITProjects\.Net\!PetProjects\MicroservicesPractice\MessageContracts\obj\Debug\net8.0\MessageContracts.pdb
+C:\ITProjects\.Net\!PetProjects\MicroservicesPractice\MessageContracts\obj\Debug\net8.0\ref\MessageContracts.dll
+C:\ITProjects\.Net\!PetProjects\MicroservicesPractice\MessageContracts\obj\Debug\net8.0\MessageContracts.csproj.AssemblyReference.cache

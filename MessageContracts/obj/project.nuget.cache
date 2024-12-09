@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "oMB48FkzNgFy7PYJll5cjkVDAbWuqluGAll9ZoqSxg+p+bHSacs3ZjGai7vN0aVaI3tNw6lPnBaxGbpxGcaQAA==",
+  "success": true,
+  "projectFilePath": "C:\\ITProjects\\.Net\\!PetProjects\\MicroservicesPractice\\MessageContracts\\MessageContracts.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\semen\\.nuget\\packages\\serilog\\4.2.0\\serilog.4.2.0.nupkg.sha512",
+    "C:\\Users\\semen\\.nuget\\packages\\serilog.sinks.file\\6.0.0\\serilog.sinks.file.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

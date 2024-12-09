@@ -1,4 +1,3 @@
-C:\ITProjects\.Net\!PetProjects\MicroservicesPractice\OrderService\bin\Debug\net8.0\appsettings.Development.json
 C:\ITProjects\.Net\!PetProjects\MicroservicesPractice\OrderService\bin\Debug\net8.0\appsettings.json
 C:\ITProjects\.Net\!PetProjects\MicroservicesPractice\OrderService\bin\Debug\net8.0\OrderService.exe
 C:\ITProjects\.Net\!PetProjects\MicroservicesPractice\OrderService\bin\Debug\net8.0\OrderService.deps.json
@@ -50,3 +49,12 @@ C:\ITProjects\.Net\!PetProjects\MicroservicesPractice\OrderService\obj\Debug\net
 C:\ITProjects\.Net\!PetProjects\MicroservicesPractice\OrderService\obj\Debug\net8.0\OrderService.pdb
 C:\ITProjects\.Net\!PetProjects\MicroservicesPractice\OrderService\obj\Debug\net8.0\OrderService.genruntimeconfig.cache
 C:\ITProjects\.Net\!PetProjects\MicroservicesPractice\OrderService\obj\Debug\net8.0\ref\OrderService.dll
+C:\ITProjects\.Net\!PetProjects\MicroservicesPractice\OrderService\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\ITProjects\.Net\!PetProjects\MicroservicesPractice\OrderService\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\ITProjects\.Net\!PetProjects\MicroservicesPractice\OrderService\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\ITProjects\.Net\!PetProjects\MicroservicesPractice\OrderService\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\ITProjects\.Net\!PetProjects\MicroservicesPractice\OrderService\bin\Debug\net8.0\MessageContracts.dll
+C:\ITProjects\.Net\!PetProjects\MicroservicesPractice\OrderService\bin\Debug\net8.0\MessageContracts.pdb
+C:\ITProjects\.Net\!PetProjects\MicroservicesPractice\OrderService\obj\Debug\net8.0\OrderService.MvcApplicationPartsAssemblyInfo.cs
+C:\ITProjects\.Net\!PetProjects\MicroservicesPractice\OrderService\bin\Debug\net8.0\Serilog.dll
+C:\ITProjects\.Net\!PetProjects\MicroservicesPractice\OrderService\bin\Debug\net8.0\Serilog.Sinks.File.dll

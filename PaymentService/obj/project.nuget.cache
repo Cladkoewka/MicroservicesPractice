@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "QIC5ybcVmEr7/DlG9Z9jXyT+PGVxTY5T8DmFdn2uTL48EW0rtNmB2Fd9S9E49eDb3BR96xxrsaMtjbyCTsCDaA==",
+  "dgSpecHash": "7yVFP53nq6Jv/AyfvEXuiZU8LeQEVL7ExqWYjpSatJUUqqnQwTad82U7JmCJXWxBNwLnRD6IPOGGtvC0VNZg9w==",
   "success": true,
   "projectFilePath": "C:\\ITProjects\\.Net\\!PetProjects\\MicroservicesPractice\\PaymentService\\PaymentService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\semen\\.nuget\\packages\\confluent.kafka\\2.6.1\\confluent.kafka.2.6.1.nupkg.sha512",
-    "C:\\Users\\semen\\.nuget\\packages\\librdkafka.redist\\2.6.1\\librdkafka.redist.2.6.1.nupkg.sha512"
+    "C:\\Users\\semen\\.nuget\\packages\\librdkafka.redist\\2.6.1\\librdkafka.redist.2.6.1.nupkg.sha512",
+    "C:\\Users\\semen\\.nuget\\packages\\serilog\\4.2.0\\serilog.4.2.0.nupkg.sha512",
+    "C:\\Users\\semen\\.nuget\\packages\\serilog.sinks.file\\6.0.0\\serilog.sinks.file.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }

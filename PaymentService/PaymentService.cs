@@ -1,47 +1,50 @@
+using System.Text.Json;
 using Confluent.Kafka;
+using MessageContracts;
 
 namespace PaymentService;
 
 public class PaymentService
 {
-    private readonly string _bootstrapServers;
-    private readonly string _topicToConsume;
-    private readonly string _topicToProduce;
+    private readonly IConsumer<Null, string> _kafkaConsumer;
+    private readonly IProducer<Null, string> _kafkaProducer;
+    private readonly string? _paymentProcessedTopic;
 
-    public PaymentService(string bootstrapServers, string topicToConsume, string topicToProduce)
+    public PaymentService(IConsumer<Null, string> kafkaConsumer, IProducer<Null, string> kafkaProducer, IConfiguration configuration)
     {
-        _bootstrapServers = bootstrapServers;
-        _topicToConsume = topicToConsume;
-        _topicToProduce = topicToProduce;
+        _kafkaConsumer = kafkaConsumer;
+        _kafkaProducer = kafkaProducer;
+        _paymentProcessedTopic = configuration["Kafka:PaymentProcessedTopic"];
     }
 
-    public void StartConsuming()
+    public void Start()
     {
-        var consumerConfig = new ConsumerConfig
-        {
-            BootstrapServers = _bootstrapServers,
-            GroupId = "payment-service-group",
-            AutoOffsetReset = AutoOffsetReset.Earliest
-        };
-
+        Console.WriteLine("Start");
+            
         Task.Run(() =>
         {
-            using var consumer = new ConsumerBuilder<Ignore, string>(consumerConfig).Build();
-            consumer.Subscribe(_topicToConsume);
-
-            Console.WriteLine($"PaymentService is listening to {_topicToConsume}...");
+            _kafkaConsumer.Subscribe("OrderCreated");
 
             while (true)
             {
-                var message = consumer.Consume();
-                Console.WriteLine($"Processing payment for: {message.Value}");
+                var result = _kafkaConsumer.Consume();
+                Console.WriteLine(result);
+                var order = JsonSerializer.Deserialize<OrderCreated>(result.Message.Value);
 
-                var paymentMessage = message.Value.Replace("created", "payment successful");
-
-                using var producer = new ProducerBuilder<Null, string>(new ProducerConfig { BootstrapServers = _bootstrapServers }).Build();
-                producer.Produce(_topicToProduce, new Message<Null, string> { Value = paymentMessage });
-
-                Console.WriteLine($"Published: {paymentMessage}");
+                bool isSuccess = order.Amount < 10000; // Simple logic
+                var paymentMessage = new PaymentProcessed
+                {
+                    OrderId = order.OrderId,
+                    IsSuccess = isSuccess,
+                    Reason = isSuccess ? "Approved" : "Insufficient funds"
+                };
+                
+                _kafkaProducer.Produce(_paymentProcessedTopic, new Message<Null, string>
+                {
+                    Value = JsonSerializer.Serialize(paymentMessage)
+                });
+                
+                Console.WriteLine($"Processed payment for order {order.OrderId}");
             }
         });
     }

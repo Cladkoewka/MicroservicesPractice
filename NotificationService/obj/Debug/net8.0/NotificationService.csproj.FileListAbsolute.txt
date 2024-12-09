@@ -1,5 +1,3 @@
-C:\ITProjects\.Net\!PetProjects\MicroservicesPractice\NotificationService\bin\Debug\net8.0\appsettings.Development.json
-C:\ITProjects\.Net\!PetProjects\MicroservicesPractice\NotificationService\bin\Debug\net8.0\appsettings.json
 C:\ITProjects\.Net\!PetProjects\MicroservicesPractice\NotificationService\bin\Debug\net8.0\NotificationService.exe
 C:\ITProjects\.Net\!PetProjects\MicroservicesPractice\NotificationService\bin\Debug\net8.0\NotificationService.deps.json
 C:\ITProjects\.Net\!PetProjects\MicroservicesPractice\NotificationService\bin\Debug\net8.0\NotificationService.runtimeconfig.json
@@ -50,3 +48,8 @@ C:\ITProjects\.Net\!PetProjects\MicroservicesPractice\NotificationService\obj\De
 C:\ITProjects\.Net\!PetProjects\MicroservicesPractice\NotificationService\obj\Debug\net8.0\NotificationService.pdb
 C:\ITProjects\.Net\!PetProjects\MicroservicesPractice\NotificationService\obj\Debug\net8.0\NotificationService.genruntimeconfig.cache
 C:\ITProjects\.Net\!PetProjects\MicroservicesPractice\NotificationService\obj\Debug\net8.0\ref\NotificationService.dll
+C:\ITProjects\.Net\!PetProjects\MicroservicesPractice\NotificationService\bin\Debug\net8.0\MessageContracts.dll
+C:\ITProjects\.Net\!PetProjects\MicroservicesPractice\NotificationService\bin\Debug\net8.0\MessageContracts.pdb
+C:\ITProjects\.Net\!PetProjects\MicroservicesPractice\NotificationService\bin\Debug\net8.0\appsettings.json
+C:\ITProjects\.Net\!PetProjects\MicroservicesPractice\NotificationService\bin\Debug\net8.0\Serilog.dll
+C:\ITProjects\.Net\!PetProjects\MicroservicesPractice\NotificationService\bin\Debug\net8.0\Serilog.Sinks.File.dll

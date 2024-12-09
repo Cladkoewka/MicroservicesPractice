@@ -1,20 +1,23 @@
+using Confluent.Kafka;
 using OrderService;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddSingleton<KafkaProducerService>(sp => 
-    new KafkaProducerService("localhost:9092"));
+builder.Services.AddControllers();
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
+builder.Services.AddSingleton(new KafkaProducerService(builder.Configuration));
 
 var app = builder.Build();
 
-app.MapPost("/orders", async (KafkaProducerService kafkaProducer) =>
+app.UseSwagger();
+app.UseSwaggerUI(c =>
 {
-    var orderId = Guid.NewGuid().ToString();
-    var message = $"Order {orderId} created";
-
-    await kafkaProducer.ProduceMessageAsync("OrderCreated", message);
-
-    return Results.Ok($"Order {orderId} created and published to Kafka.");
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "API V1");
+    c.RoutePrefix = string.Empty; 
 });
+app.MapControllers();
 
-app.Run();
+
+app.Run("http://127.0.0.1:5005");

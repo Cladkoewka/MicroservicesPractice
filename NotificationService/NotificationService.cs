@@ -1,38 +1,46 @@
+using System.Text.Json;
 using Confluent.Kafka;
+using MessageContracts;
 
 namespace NotificationService;
 
 public class NotificationService
 {
-    private readonly string _bootstrapServers;
-    private readonly string _topicToConsume;
+    private readonly IConsumer<Null, string> _kafkaConsumer;
 
-    public NotificationService(string bootstrapServers, string topicToConsume)
+    public NotificationService(IConsumer<Null, string> kafkaConsumer)
     {
-        _bootstrapServers = bootstrapServers;
-        _topicToConsume = topicToConsume;
+        _kafkaConsumer = kafkaConsumer;
     }
 
-    public void StartConsuming()
+    public void Start()
     {
-        var consumerConfig = new ConsumerConfig
-        {
-            BootstrapServers = _bootstrapServers,
-            GroupId = "notification-service-group",
-            AutoOffsetReset = AutoOffsetReset.Earliest
-        };
-
         Task.Run(() =>
         {
-            using var consumer = new ConsumerBuilder<Ignore, string>(consumerConfig).Build();
-            consumer.Subscribe(_topicToConsume);
+            _kafkaConsumer.Subscribe("PaymentProcessed");
 
-            Console.WriteLine($"NotificationService is listening to {_topicToConsume}...");
-
+            Console.WriteLine("NotificationService is listening to PaymentProcessed...");
+            
             while (true)
             {
-                var message = consumer.Consume();
-                Console.WriteLine($"Sending notification: {message.Value}");
+                try
+                {
+                    var result = _kafkaConsumer.Consume();
+                    var payment = JsonSerializer.Deserialize<PaymentProcessed>(result.Message.Value);
+
+                    if (payment != null)
+                    {
+                        var notification = payment.IsSuccess
+                            ? $"Order {payment.OrderId}: Payment approved."
+                            : $"Order {payment.OrderId}: Payment failed. Reason: {payment.Reason}";
+
+                        Console.WriteLine($"Notification: {notification}");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Error while consuming message: {ex.Message}");
+                }
             }
         });
     }

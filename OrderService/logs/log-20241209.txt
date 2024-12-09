@@ -1,0 +1,1 @@
+2024-12-09 04:33:38.012 +03:00 [INF] Published message to topic OrderCreated: {"OrderId":"c0eacc6f-55eb-465c-8bc0-2baa124b1c50","CustomerName":"string","Amount":0}
